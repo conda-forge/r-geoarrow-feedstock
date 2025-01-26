@@ -1,6 +1,5 @@
 {% set version = '0.2.1' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-geoarrow
@@ -13,8 +12,7 @@ source:
   sha256: 44d4bb29be6aa3e05320151eb6efd0df7ff498d3298ff4e9a94480b449a7bc69
 
 build:
-  merge_build_host: True  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -42,7 +40,6 @@ requirements:
     - r-wk >=0.9.0
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
     - r-nanoarrow >=0.5.0
     - r-wk >=0.9.0
 
