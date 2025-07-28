@@ -214,6 +214,3 @@ Feedstock Maintainers
 * [@conda-forge/r](https://github.com/orgs/conda-forge/teams/r/)
 * [@tdsmith](https://github.com/tdsmith/)
 
-
-<!-- dummy commit to enable rerendering -->
-
