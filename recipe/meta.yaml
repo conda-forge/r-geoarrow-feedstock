@@ -1,4 +1,4 @@
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/geoarrow_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/geoarrow/geoarrow_{{ version }}.tar.gz
-  sha256: 571b2ffbc35e64d26e7b2e7e85beb0da8a74349d2dde3a5f5d792b5e2734f0c1
+  sha256: 27590ed55d17f5dfbb0d801127da87d85f4e4a8c0c03c56e37401888083c2cd2
 
 build:
   number: 0
@@ -54,8 +54,8 @@ test:
 about:
   home: https://github.com/geoarrow/geoarrow-r
   license: Apache-2.0
-  summary: Provides extension types and conversions to between R-native object types and 'Arrow' columnar types. This includes integration among the 'arrow', 'nanoarrow', 'sf', and 'wk' packages such that spatial metadata is preserved wherever possible. Extension type implementations ensure first-class geometry data type
-    support in the 'arrow' and 'nanoarrow' packages.
+  summary: Provides extension types and conversions to between R-native object types and 'Arrow' columnar types. This includes integration among the 'arrow', 'nanoarrow', 'sf', and 'wk' packages such that spatial metadata is preserved wherever possible. Extension type implementations ensure first-class geometry data 
+    type support in the 'arrow' and 'nanoarrow' packages.
   license_family: APACHE
   license_file: LICENSE.md
 
