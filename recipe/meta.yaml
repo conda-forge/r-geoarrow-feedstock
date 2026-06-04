@@ -1,4 +1,4 @@
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/geoarrow_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/geoarrow/geoarrow_{{ version }}.tar.gz
-  sha256: 27590ed55d17f5dfbb0d801127da87d85f4e4a8c0c03c56e37401888083c2cd2
+  sha256: dacb14aca90a3890e29563e71b6ac658ffd015cae156923b8f9536a7c2ac2ea8
 
 build:
   number: 0
